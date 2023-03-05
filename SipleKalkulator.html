@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simpel kalkulator</title>
+  </head>
+  <script lang="javascript">
+    document.write('Dimodifikasi terakhirpada : ' + document.lastModified)
+    function mines(){
+        var hasil = document.querySelector('.hasil')
+        var bil1 = document.querySelector('.bil1')
+        var bil2 = document.querySelector('.bil2')
+        bil1 = parseInt(bil1.value, 10)
+        bil2 = parseInt(bil2.value, 10)
+        hasil.value = bil1 - bil2
+
+    }
+    function bagi(){
+        var hasil = document.querySelector('.hasil')
+        var bil1 = document.querySelector('.bil1')
+        var bil2 = document.querySelector('.bil2')
+        bil1 = parseInt(bil1.value, 10)
+        bil2 = parseInt(bil2.value, 10)
+        hasil.value = bil1 / bil2
+
+    }
+    function tambah(){
+        var hasil = document.querySelector('.hasil')
+        var bil1 = document.querySelector('.bil1')
+        var bil2 = document.querySelector('.bil2')
+
+        bil1 = parseInt(bil1.value, 10)
+        bil2 = parseInt(bil2.value, 10)
+        hasil.value = bil1 + bil2
+
+    }
+    function kali(){
+        var hasil = document.querySelector('.hasil')
+        var bil1 = document.querySelector('.bil1')
+        var bil2 = document.querySelector('.bil2')
+        bil1 = parseInt(bil1.value, 10)
+        bil2 = parseInt(bil2.value, 10)
+        hasil.value = bil1 * bil2
+
+    }
+  </script>
+  <body>
+    <br />
+    <input type="text" placeholder="Input Bil 1" class="bil1" />
+    <input type="text" placeholder="Input Bil 2" class="bil2" />
+    <br />
+    <input type="button" value="+" onclick="tambah()" />
+    <input type="button" value="/" onclick="bagi()" />
+    <input type="button" value="-" onclick="mines()" />
+    <input type="button" value="X" onclick="kali()" />
+    <br />
+    <input type="text" placeholder="Hasil" class="hasil" />
+  </body>
+</html>
